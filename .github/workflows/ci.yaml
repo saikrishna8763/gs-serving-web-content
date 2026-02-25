@@ -17,6 +17,7 @@ jobs:
       build-tool: "maven"                 
       service-name: "my-java-service"
       sonar-project-key: "my-java-service"
+      project-path: complete
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
