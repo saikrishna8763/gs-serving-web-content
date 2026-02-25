@@ -1,0 +1,13 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  java-ci:
+    uses: saikrishna8763/ci-templates/.github/workflows/java-ci-template.yml@main
+    with:
+      java-version: "17"
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
