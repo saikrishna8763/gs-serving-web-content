@@ -14,7 +14,7 @@ jobs:
     uses: saikrishna8763/ci-templates/.github/workflows/java-ci-template.yml@main
     with:
       java-version: "17"
-      build-tool: "maven"                 
+      build-tool: "gradle"                 
       service-name: "my-java-service"
       sonar-project-key: "my-java-service"
       project-path: complete
